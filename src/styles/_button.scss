@@ -1,0 +1,53 @@
+button {
+	&.btn {
+		position: relative;
+		font-size: $font-size-md;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 10px;
+		border-radius: $border-radius-small;
+		background-color: $color-white;
+		cursor: pointer;
+		transition: all 0.3s;
+
+		&:disabled {
+			cursor: not-allowed !important;
+		}
+
+		&-primary {
+			border-color: $color-primary;
+			color: $color-primary;
+			background-color: $color-secondary;
+			&:hover {
+				* {
+					color: $color-primary;
+					fill: $color-primary;
+				}
+			}
+		}
+
+		&-secondary {
+			border-color: $color-secondary;
+			color: $color-secondary;
+			background-color: $color-primary;
+			&:hover {
+				* {
+					color: $color-secondary;
+					fill: $color-secondary;
+				}
+			}
+		}
+
+		&-no-border {
+			background: none;
+			border: none;
+		}
+
+		&-transparent {
+			background: transparent;
+		}
+
+
+	}
+}
